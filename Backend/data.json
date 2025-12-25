@@ -3,7 +3,13 @@
     {
       "id": 1,
       "name": "Speaking Test 1",
-      "score": 85,
+      "score": {
+        "overall":7,
+        "Pronunciation":8.3,
+        "Fluency":9,
+        "Vocabulary":6.2,
+        "Grammar":6.2
+      },
       "date": "2025-01-10"
     }
     
