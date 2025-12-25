@@ -17,15 +17,15 @@ The application fetches report data from a simple backend API and presents it in
 ```
 ### 3.  Start backend server: run below commands
 ```bash
-    a) cd Backend
-    b) node Server
+     cd Backend
+     node Server
 ```
 ### 4.  Start frontend: run below commands
 ```bash
-    a) cd ..
-    b) cd vite-project
-    c) npm run dev
-    d) click on link, or paste "localhost:5173" in browser.
+     cd ..
+     cd vite-project
+     npm run dev
+     click on link, or paste "localhost:5173" in browser.
 ```
 
 
