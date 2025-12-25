@@ -35,10 +35,10 @@ The application fetches report data from a simple backend API and presents it in
  {
   "score": {
     "overall": 7,
-    "pronunciation": 8.3,
-    "fluency": 9,
-    "vocabulary": 6.2,
-    "grammar": 6.2
+    "Pronunciation": 8.3,
+    "Fluency": 9,
+    "Vocabulary": 6.2,
+    "Grammar": 6.2
   }
 }
 
