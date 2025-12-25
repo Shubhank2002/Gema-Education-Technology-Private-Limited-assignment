@@ -57,43 +57,43 @@ Example structure returned by the API:
 
 Descriptive feedback is generated using simple conditional logic based on score ranges.
 
-Score Ranges
+### Score Ranges
 
 - Score ≥ 8
 
- . Excellent performance with dynamic control
+ - Excellent performance with dynamic control
 
-  Score between 6 and 7.9
+- Score between 6 and 7.9
 
-  . Good performance with minor inaccuracies
+- Good performance with minor inaccuracies
 
 - Score < 6
 
-  . Needs improvement
+- Needs improvement
 
 ## Feedback Implementation
 
- . Feedback messages are stored in a centralized configuration object (FEEDBACK_MAP).
+- Feedback messages are stored in a centralized configuration object (FEEDBACK_MAP).
 
- . A helper function selects the correct feedback based on the score and category.
+- A helper function selects the correct feedback based on the score and category.
 
 
     
 ## Features
 
-. Overall Score (out of 9)
-. Skill-wise Scores
-. Pronunciation
-. Fluency
-. Vocabulary
-Grammar
-Progress bars for each skill
-Descriptive Feedback
-Automatically generated based on score ranges
-Fully Responsive UI
-Separate layouts for mobile and desktop
-Dynamic Data Rendering
-Updates automatically when API data changes
+- Overall Score (out of 9)
+- Skill-wise Scores
+- Pronunciation
+- Fluency
+- Vocabulary
+- Grammar
+- Progress bars for each skill
+- Descriptive Feedback
+- Automatically generated based on score ranges
+- Fully Responsive UI
+- Separate layouts for mobile and desktop
+- Dynamic Data Rendering
+- Updates automatically when API data changes
 
 
 
@@ -101,13 +101,13 @@ Updates automatically when API data changes
 
 ### Frontend
 
-React.js
-Tailwind CSS
-Axios
-Lucide React (icons)
+- React.js
+- Tailwind CSS
+- Axios
+- Lucide React (icons)
 
 ### Backend (Simple)
 
-Node.js + Express
-JSON / in-memory data source
-Single API endpoint
+- Node.js + Express
+- JSON / in-memory data source
+- Single API endpoint
