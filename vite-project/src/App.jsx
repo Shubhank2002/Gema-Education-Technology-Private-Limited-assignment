@@ -75,7 +75,7 @@ function App() {
         <ScoresSummary scores={apiData?.score} />
         <DescriptiveFeedback scores={apiData?.score} />
       </div>
-      <div className="sm:hidden flex flex-col gap-5 text-black font-sans w-[90vw] ">
+      <div className="sm:hidden flex flex-col gap-8 text-black font-sans w-[90vw] ">
         <nav className="flex flex-col gap-4 border-b border-gray-500 py-3">
           <h1 className="text-[22px]"> Gema speaking Tests Report</h1>
           <ul className="flex gap-2 justify-center text-blue-500 font-bold">
@@ -95,6 +95,7 @@ function App() {
         </nav>
         <OverallScoreCard data={apiData}/>
         <ScoresSummary scores={apiData.score}/>
+        <DescriptiveFeedback scores={apiData.score}/>
       </div>
     </>
   );
