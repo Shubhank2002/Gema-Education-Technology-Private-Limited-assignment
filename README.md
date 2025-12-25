@@ -4,11 +4,11 @@ Student Assessment Report Page
 A responsive web dashboard that displays speaking test scores and descriptive feedback based on performance.
 The application fetches report data from a simple backend API and presents it in a clean, user-friendly UI.
 
-#How to run the project
+# How to run the project
 
 1) Clone the repository: run below commands 
     a) git clone https://github.com/Shubhank2002/Gema-Education-Technology-Private-Limited-assignment.git
-    b) cd speaking-test-report
+    b) cd Gema-Education-Technology-Private-Limited-assignment
    
 2) Install dependencies: run below commands
     npm i
@@ -23,10 +23,56 @@ The application fetches report data from a simple backend API and presents it in
     c) npm run dev
     d) click on link, or paste "localhost:5173" in browser.
 
+
+
+# Where the Scores Are Stored
+
+ Scores are stored on the backend in a simple JSON / in-memory data source.
+
+ No database is used to keep the implementation simple.   
+
+ Example structure returned by the API:
+ {
+  "score": {
+    "overall": 7,
+    "pronunciation": 8.3,
+    "fluency": 9,
+    "vocabulary": 6.2,
+    "grammar": 6.2
+  }
+}
+
+The frontend fetches this data using a single API endpoint:
+   GET /api/reports
+
+
+# How Feedback Logic Works
+
+   Descriptive feedback is generated using simple conditional logic based on score ranges.
+
+   Score Ranges
+
+    Score ≥ 8
+
+    → Excellent performance with dynamic control
+
+     Score between 6 and 7.9
+
+    → Good performance with minor inaccuracies
+
+    Score < 6
+
+    → Needs improvement
+
+# Feedback Implementation
+
+   Feedback messages are stored in a centralized configuration object (FEEDBACK_MAP).
+
+   A helper function selects the correct feedback based on the score and category.
+
+
     
-
-
-#Features
+# Features
 
 Overall Score (out of 9)
 Skill-wise Scores
@@ -42,17 +88,9 @@ Separate layouts for mobile and desktop
 Dynamic Data Rendering
 Updates automatically when API data changes
 
-#Feedback Logic
 
-Feedback is generated using simple conditional logic:
-Score ≥ 8 → Excellent performance with strong control
-Score 6 – 7.9 → Good performance with minor inaccuracies
-Score < 6 → Needs improvement
-This logic is applied consistently across:
-Overall score
-Each individual skill
 
-#Tech Stack
+# Tech Stack
 
 Frontend
 
