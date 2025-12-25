@@ -33,12 +33,12 @@ click on link, or paste "localhost:5173" in browser.
 
 ## Where the Scores Are Stored
 
- Scores are stored on the backend in a simple JSON / in-memory data source.
+Scores are stored on the backend in a simple JSON / in-memory data source.
 
- No database is used to keep the implementation simple.   
+No database is used to keep the implementation simple.   
 
- Example structure returned by the API:
- bash```
+Example structure returned by the API:
+```bash
  {
   "score": {
     "overall": 7,
@@ -49,33 +49,33 @@ click on link, or paste "localhost:5173" in browser.
   }
 }
 ```
-   ### The frontend fetches this data using a single API endpoint:
-   GET /api/reports
+### The frontend fetches this data using a single API endpoint:
+-GET /api/reports
 
 
 ## How Feedback Logic Works
 
-   Descriptive feedback is generated using simple conditional logic based on score ranges.
+Descriptive feedback is generated using simple conditional logic based on score ranges.
 
-   Score Ranges
+Score Ranges
 
-    Score ≥ 8
+-Score ≥ 8
 
-    → Excellent performance with dynamic control
+ → Excellent performance with dynamic control
 
-     Score between 6 and 7.9
+  Score between 6 and 7.9
 
-    → Good performance with minor inaccuracies
+  → Good performance with minor inaccuracies
 
-    Score < 6
+  Score < 6
 
-    → Needs improvement
+  → Needs improvement
 
 ## Feedback Implementation
 
-   Feedback messages are stored in a centralized configuration object (FEEDBACK_MAP).
+  Feedback messages are stored in a centralized configuration object (FEEDBACK_MAP).
 
-   A helper function selects the correct feedback based on the score and category.
+  A helper function selects the correct feedback based on the score and category.
 
 
     
