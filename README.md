@@ -11,23 +11,25 @@ The application fetches report data from a simple backend API and presents it in
     git clone https://github.com/Shubhank2002/Gema-Education-Technology-Private-Limited-assignment.git
      cd Gema-Education-Technology-Private-Limited-assignment
    ```
-2) Install dependencies: run below commands
+### 2. Install dependencies: run below commands
 ```bash
     npm i
-
-3)  Start backend server: run below commands
+```
+### 3.  Start backend server: run below commands
+```bash
     a) cd Backend
     b) node Server
-
-4)  Start frontend: run below commands
+```
+### 4.  Start frontend: run below commands
+```bash
     a) cd ..
     b) cd vite-project
     c) npm run dev
     d) click on link, or paste "localhost:5173" in browser.
+```
 
 
-
-# Where the Scores Are Stored
+## Where the Scores Are Stored
 
  Scores are stored on the backend in a simple JSON / in-memory data source.
 
