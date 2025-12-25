@@ -59,17 +59,17 @@ Descriptive feedback is generated using simple conditional logic based on score 
 
 ### Score Ranges
 
-- Score ≥ 8
+- **Score ≥ 8**
 
- - Excellent performance with dynamic control
+  - Excellent performance with dynamic control
 
-- Score between 6 and 7.9
+- **Score between 6 and 7.9**
 
-- Good performance with minor inaccuracies
+  - Good performance with minor inaccuracies
 
-- Score < 6
+- **Score < 6**
 
-- Needs improvement
+  - Needs improvement
 
 ## Feedback Implementation
 
