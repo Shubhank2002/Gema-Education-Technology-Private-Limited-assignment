@@ -38,7 +38,7 @@ Scores are stored on the backend in a simple JSON / in-memory data source.
 No database is used to keep the implementation simple.   
 
 Example structure returned by the API:
-```bash
+```json
  {
   "score": {
     "overall": 7,
@@ -50,7 +50,7 @@ Example structure returned by the API:
 }
 ```
 ### The frontend fetches this data using a single API endpoint:
--GET /api/reports
+- `GET /api/reports`
 
 
 ## How Feedback Logic Works
@@ -59,33 +59,33 @@ Descriptive feedback is generated using simple conditional logic based on score 
 
 Score Ranges
 
--Score ≥ 8
+- Score ≥ 8
 
- → Excellent performance with dynamic control
+ . Excellent performance with dynamic control
 
   Score between 6 and 7.9
 
-  → Good performance with minor inaccuracies
+  . Good performance with minor inaccuracies
 
-  Score < 6
+- Score < 6
 
-  → Needs improvement
+  . Needs improvement
 
 ## Feedback Implementation
 
-  Feedback messages are stored in a centralized configuration object (FEEDBACK_MAP).
+ . Feedback messages are stored in a centralized configuration object (FEEDBACK_MAP).
 
-  A helper function selects the correct feedback based on the score and category.
+ . A helper function selects the correct feedback based on the score and category.
 
 
     
 ## Features
 
-Overall Score (out of 9)
-Skill-wise Scores
-Pronunciation
-Fluency
-Vocabulary
+. Overall Score (out of 9)
+. Skill-wise Scores
+. Pronunciation
+. Fluency
+. Vocabulary
 Grammar
 Progress bars for each skill
 Descriptive Feedback
