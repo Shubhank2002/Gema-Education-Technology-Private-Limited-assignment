@@ -4,29 +4,31 @@
 A responsive web dashboard that displays speaking test scores and descriptive feedback based on performance.
 The application fetches report data from a simple backend API and presents it in a clean, user-friendly UI.
 
+---
+
 ## How to run the project
 
 ### 1. Clone the repository: run below commands 
 ```bash
-    git clone https://github.com/Shubhank2002/Gema-Education-Technology-Private-Limited-assignment.git
-     cd Gema-Education-Technology-Private-Limited-assignment
-   ```
+git clone https://github.com/Shubhank2002/Gema-Education-Technology-Private-Limited-assignment.git
+cd Gema-Education-Technology-Private-Limited-assignment
+```
 ### 2. Install dependencies: run below commands
 ```bash
-    npm i
+npm i
 ```
 ### 3.  Start backend server: run below commands
 ```bash
-     cd Backend
-     node Server
+cd Backend
+node Server
 ```
 ### 4.  Start frontend: run below commands
 ```bash
-     cd ..
-     cd vite-project
-     npm run dev
+cd ..
+cd vite-project
+npm run dev
 ```
-     click on link, or paste "localhost:5173" in browser.
+click on link, or paste "localhost:5173" in browser.
 
 
 ## Where the Scores Are Stored
@@ -47,8 +49,7 @@ The application fetches report data from a simple backend API and presents it in
   }
 }
 ```
-
-### The frontend fetches this data using a single API endpoint:
+   ### The frontend fetches this data using a single API endpoint:
    GET /api/reports
 
 
