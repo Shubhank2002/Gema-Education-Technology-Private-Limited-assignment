@@ -36,6 +36,7 @@ The application fetches report data from a simple backend API and presents it in
  No database is used to keep the implementation simple.   
 
  Example structure returned by the API:
+ bash```
  {
   "score": {
     "overall": 7,
@@ -45,12 +46,13 @@ The application fetches report data from a simple backend API and presents it in
     "Grammar": 6.2
   }
 }
+```
 
-The frontend fetches this data using a single API endpoint:
+### The frontend fetches this data using a single API endpoint:
    GET /api/reports
 
 
-# How Feedback Logic Works
+## How Feedback Logic Works
 
    Descriptive feedback is generated using simple conditional logic based on score ranges.
 
@@ -68,7 +70,7 @@ The frontend fetches this data using a single API endpoint:
 
     → Needs improvement
 
-# Feedback Implementation
+## Feedback Implementation
 
    Feedback messages are stored in a centralized configuration object (FEEDBACK_MAP).
 
@@ -76,7 +78,7 @@ The frontend fetches this data using a single API endpoint:
 
 
     
-# Features
+## Features
 
 Overall Score (out of 9)
 Skill-wise Scores
@@ -94,16 +96,16 @@ Updates automatically when API data changes
 
 
 
-# Tech Stack
+## Tech Stack
 
-Frontend
+### Frontend
 
 React.js
 Tailwind CSS
 Axios
 Lucide React (icons)
 
-Backend (Simple)
+### Backend (Simple)
 
 Node.js + Express
 JSON / in-memory data source
