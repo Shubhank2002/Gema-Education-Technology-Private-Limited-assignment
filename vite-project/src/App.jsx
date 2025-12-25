@@ -51,7 +51,7 @@ function App() {
 
   return (
     <>
-      <div className="z-50 shadow-md min-h-screen bg-white flex flex-col gap-3 rounded-2xl px-6 py-2 w-[60vw]">
+      <div className="hidden sm:flex z-50 shadow-md min-h-screen bg-white flex-col gap-3 rounded-2xl px-6 py-2 w-[60vw]">
         <nav className="flex  text-gray-600 relative border-b border-b-gray-300 sm:py-8 font-sans sm:mt-3 items-center">
           <p className="sm:text-[26px] absolute text-black sm:left-1/5">
             Gema Education Tests Report
@@ -74,6 +74,27 @@ function App() {
         <OverallScoreCard data={apiData} />
         <ScoresSummary scores={apiData?.score} />
         <DescriptiveFeedback scores={apiData?.score} />
+      </div>
+      <div className="sm:hidden flex flex-col gap-5 text-black font-sans w-[90vw] ">
+        <nav className="flex flex-col gap-4 border-b border-gray-500 py-3">
+          <h1 className="text-[22px]"> Gema speaking Tests Report</h1>
+          <ul className="flex gap-2 justify-center text-blue-500 font-bold">
+            <li className="">
+              <Languages size={22} />
+            </li>
+            <li>
+              <ThumbsUp size={22} />
+            </li>
+            <li>
+              <Home size={22} />
+            </li>
+            <li>
+              <Mail size={22} />
+            </li>
+          </ul>
+        </nav>
+        <OverallScoreCard data={apiData}/>
+        <ScoresSummary scores={apiData.score}/>
       </div>
     </>
   );

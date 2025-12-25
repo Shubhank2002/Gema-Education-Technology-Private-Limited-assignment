@@ -1,4 +1,5 @@
 import React from 'react'
+import ReportHeader from './ReportHeader'
 
 const OverallScoreCard = ({data}) => {
 
@@ -10,6 +11,7 @@ const OverallScoreCard = ({data}) => {
         <h1 className='text-[28px] mb-2 text-left text-black'>{data.name}</h1>
         <h3 className='text-left'>{data.date}</h3>
         <h3 className='text-left'>Link to secure online certificate</h3>
+        <ReportHeader/>
         <h3>Note: This link can be e-mailed and shared with others.</h3>
       </div>
       <div><img src="/speechchace logo.png" alt="speechchace" /></div>
