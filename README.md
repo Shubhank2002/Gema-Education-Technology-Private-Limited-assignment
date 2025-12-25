@@ -25,8 +25,8 @@ The application fetches report data from a simple backend API and presents it in
      cd ..
      cd vite-project
      npm run dev
-     click on link, or paste "localhost:5173" in browser.
 ```
+     click on link, or paste "localhost:5173" in browser.
 
 
 ## Where the Scores Are Stored
