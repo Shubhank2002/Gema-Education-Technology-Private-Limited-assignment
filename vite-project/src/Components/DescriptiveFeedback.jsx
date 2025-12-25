@@ -18,8 +18,8 @@ const DescriptiveFeedback = ({ scores }) => {
       <h1 className="border-b border-b-gray-400 pb-5 text-left font-sans sm:text-[26px]">
         Descriptive Feedback
       </h1>
-      <div className="space-y-4">
-        <h1 className="sm:text-[24px] text-left">
+      <div className="space-y-2">
+        <h1 className="sm:text-[24px] text-left font-bold">
           Overall{" "}
           <span
             style={{ color: `${scores.overall >= 7 ? "green" : "orange"}` }}
@@ -27,12 +27,12 @@ const DescriptiveFeedback = ({ scores }) => {
             ({scores.overall})
           </span>
         </h1>
-        <p className="text-left text-[18px]">
+        <p className="text-left text-[16px] sm:text-[18px]">
           {getFeedback(scores, "overall")}
         </p>
       </div>
-      <div className="space-y-4">
-        <h1 className="sm:text-[24px] text-left">
+      <div className="space-y-2">
+        <h1 className="sm:text-[24px] text-left font-bold">
           Pronunciation{" "}
           <span
             style={{
@@ -42,12 +42,12 @@ const DescriptiveFeedback = ({ scores }) => {
             ({scores.Pronunciation})
           </span>
         </h1>
-        <p className="text-left text-[18px]">
+        <p className="text-left text-[16px] sm:text-[18px]">
           {getFeedback(scores, "Pronunciation")}
         </p>
       </div>
-      <div className="space-y-4">
-        <h1 className="sm:text-[24px] text-left">
+      <div className="space-y-2">
+        <h1 className="sm:text-[24px] text-left font-bold">
           Fluency{" "}
           <span
             style={{ color: `${scores.Fluency >= 7 ? "green" : "orange"}` }}
@@ -55,12 +55,12 @@ const DescriptiveFeedback = ({ scores }) => {
             ({scores.Fluency})
           </span>
         </h1>
-        <p className="text-left text-[18px]">
+        <p className="text-left text-[16px] sm:text-[18px]">
           {getFeedback(scores, "Fluency")}
         </p>
       </div>
-      <div className="space-y-4">
-        <h1 className="sm:text-[24px] text-left">
+      <div className="space-y-2">
+        <h1 className="sm:text-[24px] text-left font-bold">
           Vocabulary{" "}
           <span
             style={{ color: `${scores.Vocabulary >= 7 ? "green" : "orange"}` }}
@@ -68,12 +68,12 @@ const DescriptiveFeedback = ({ scores }) => {
             ({scores.Vocabulary})
           </span>
         </h1>
-        <p className="text-left text-[18px]">
+        <p className="text-left text-[16px] sm:text-[18px]">
           {getFeedback(scores, "Vocabulary")}
         </p>
       </div>
-      <div className="space-y-4">
-        <h1 className="sm:text-[24px] text-left">
+      <div className="space-y-2">
+        <h1 className="sm:text-[24px] text-left font-bold">
           Grammar{" "}
           <span
             style={{ color: `${scores.Grammar >= 7 ? "green" : "orange"}` }}
@@ -81,7 +81,7 @@ const DescriptiveFeedback = ({ scores }) => {
             ({scores.Grammar})
           </span>
         </h1>
-        <p className="text-left text-[18px]">
+        <p className="text-left text-[16px] sm:text-[18px]">
           {getFeedback(scores, "Grammar")}
         </p>
       </div>

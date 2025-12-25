@@ -1,16 +1,18 @@
 # Gema-Education-Technology-Private-Limited-assignment
-Student Assessment Report Page
+## Student Assessment Report Page
 
 A responsive web dashboard that displays speaking test scores and descriptive feedback based on performance.
 The application fetches report data from a simple backend API and presents it in a clean, user-friendly UI.
 
-# How to run the project
+## How to run the project
 
-1) Clone the repository: run below commands 
-    a) git clone https://github.com/Shubhank2002/Gema-Education-Technology-Private-Limited-assignment.git
-    b) cd Gema-Education-Technology-Private-Limited-assignment
-   
+### 1. Clone the repository: run below commands 
+```bash
+    git clone https://github.com/Shubhank2002/Gema-Education-Technology-Private-Limited-assignment.git
+     cd Gema-Education-Technology-Private-Limited-assignment
+   ```
 2) Install dependencies: run below commands
+```bash
     npm i
 
 3)  Start backend server: run below commands

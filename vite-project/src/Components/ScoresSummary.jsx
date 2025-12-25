@@ -12,7 +12,7 @@ const ScoresSummary = ({ scores }) => {
           <div className="flex flex-col">
             <div className="w-50 text-white">
               <div className="w-full bg-blue-400 rounded-t-lg py-2 sm:text-[20px]">
-                speechace
+                Gema
               </div>
               <div className="w-full bg-green-400 rounded-b-[100px] h-35 font-bold flex items-center justify-center text-[42px]">
                 <h1 className="relative bottom-4 ">{scores.overall}/9</h1>
@@ -78,7 +78,7 @@ const ScoresSummary = ({ scores }) => {
         <div className="flex gap-8 justify-between items-center">
           <div className="flex flex-col gap-2 text-white">
             <div>
-              <div className="w-30 bg-blue-400 h-8 rounded-t-lg">Speechace</div>
+              <div className="w-30 bg-blue-400 h-8 rounded-t-lg">Gema</div>
               <div className="w-30 h-25 bg-green-500  rounded-b-[55px] flex justify-center items-center font-bold">
                 <h1 className="relative bottom-3 text-[20px]">
                   {scores.overall}/9

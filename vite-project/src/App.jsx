@@ -13,7 +13,6 @@ function App() {
 
   useEffect(() => {
     const url = "http://localhost:8000/api/reports";
-    
 
     const fetchDetails = async () => {
       try {
@@ -22,7 +21,7 @@ function App() {
         setApiData(data);
         seterror("");
       } catch (error) {
-        seterror(error.message || 'something went wrong');
+        seterror(error.message || "something went wrong");
       } finally {
         setloading(false);
       }
@@ -40,21 +39,17 @@ function App() {
   }
 
   if (error) {
-    return (
-      <h1 className="text-red-500 text-center mt-20 text-xl">
-        {error}
-      </h1>
-    );
+    return <h1 className="text-red-500 text-center mt-20 text-xl">{error}</h1>;
   }
 
-  if(!apiData) return null
+  if (!apiData) return null;
 
   return (
     <>
       <div className="hidden sm:flex z-50 shadow-md min-h-screen bg-white flex-col gap-3 rounded-2xl px-6 py-2 w-[60vw]">
         <nav className="flex  text-gray-600 relative border-b border-b-gray-300 sm:py-8 font-sans sm:mt-3 items-center">
           <p className="sm:text-[26px] absolute text-black sm:left-1/5">
-            Gema Education Tests Report
+            Student Assessment Report Page
           </p>
           <ul className="flex gap-2 absolute right-5 text-blue-500 font-bold">
             <li className="">
@@ -77,7 +72,7 @@ function App() {
       </div>
       <div className="sm:hidden flex flex-col gap-8 text-black font-sans w-[90vw] ">
         <nav className="flex flex-col gap-4 border-b border-gray-500 py-3">
-          <h1 className="text-[22px]"> Gema speaking Tests Report</h1>
+          <h1 className="text-[22px]"> Student Assessment Report Page</h1>
           <ul className="flex gap-2 justify-center text-blue-500 font-bold">
             <li className="">
               <Languages size={22} />
@@ -93,9 +88,9 @@ function App() {
             </li>
           </ul>
         </nav>
-        <OverallScoreCard data={apiData}/>
-        <ScoresSummary scores={apiData.score}/>
-        <DescriptiveFeedback scores={apiData.score}/>
+        <OverallScoreCard data={apiData} />
+        <ScoresSummary scores={apiData.score} />
+        <DescriptiveFeedback scores={apiData.score} />
       </div>
     </>
   );
